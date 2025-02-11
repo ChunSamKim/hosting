@@ -1,180 +1,123 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume</title>
-  <style>
-    body {
-      background: url('./images/bonobono.png') no-repeat center center fixed;
-      background-size: cover;
-    }
-    
-    .container {
-      display: flex;
-      gap: 20px; 
-      background-color: #f4f4f4;
-      max-width: 800px;
-      padding: 20px;
-      margin: 0 auto; 
-      
-      /* border-radius: 20px; */    
-    }
-
-    .left-section {
-      background-color: #d2e9e0;
-      padding: 20px;
-      width: 250px;
-      text-align: center;
-      border-radius: 15px; 
-    }
-
-    .left-section img {
-      width: 100%;
-      height: auto;
-      border-radius: 100px;
-    }
-
-    .left-section h1 {
-      font-size: 24px;
-      margin: 10px 0;
-    }
-
-    .side p {
-      color: #666;
-    }
-    
-    
-    .content-section {
-      background-color: #d2e9e0;
-      padding: 20px;
-      flex-grow: 1; 
-      border-radius: 15px; 
-    }
-
-    .contents h2 {
-      font-size: 20px;
-      border-bottom: 1px dotted #888;
-      padding: 10px;
-      margin-top: 20px;
-    }
-
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-      background-color:#d7f5ea;
-    }
-
-    table, th, td {
-      border: 1px solid black;
-    }
-
-    th, td {
-      padding: 8px;
-      text-align: center;
-    }
-
-    .highlight {
-      background-color: yellow;
-      font-weight: bold;
-    }
-
-    a {
-      color: blue;
-      text-decoration: none;
-    }
-
-    .subtitle{
-        background-color: #a2ccbc;
-        border-radius: 15px;
-    }
-    
+<!DOCTYPE HTML>
+<!--
+	Urban by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+--><html><head><title>Urban by TEMPLATED</title><meta charset="utf-8"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/main.css"></head>
+<style>
+	.rotate-on-hover {
+    transition: transform 1s ease-in-out;
+  }
+  
+  .rotate-on-hover:hover {
+    transform: rotate(360deg);
+  }
   </style>
-</head>
 <body>
-  <div class="container">
-    <div class="left-section">
-      <img src="images/gumba.png">
-      
-      <h2>Mr Gumba</h2>
-      
-      
-      <p>프로그래밍 재밌다</p>
-      <div style="margin-top: 50px; border-radius: 10px; background-color: #a2ccbc;">
-        <p><span style="font-weight: bold;">주소 : </span>Incheon, Korea</p>
-        <p><span style="font-weight: bold;">Email : </span>test@naver.com</p>
-      </div>
-      <p style="margin-top: 150px;">
-        <span style="font-weight: bold;">SNS </span>
-        <a href="#">바로가기</a>
-      </p>
-    </div>
 
-    <div class="content-section">
-      <div class="contents">
-        <div class="subtitle">
-            <h2>자기소개</h2>
-        </div>
-        
-        <p><span class="highlight">프로그래밍</span>에 관심이 많습니다.<br>
-        현재 열심히 공부하며 코딩 중!</p>
-        <div class="subtitle">
-            <h2>Experience</h2>
-        </div>
-        
-        <ul>
-          <li>프론트엔드
-            <ul>
-              <li>HTML/CSS/JAVASCRIPT</li>
-              <li>웹 페이지 잘 만든다</li>
-              <li>다 잘함</li>
-            </ul>
-          </li>
-          <li>백엔드
-            <ul>
-              <li>자바 잘함</li>
-              <li>오라클 더 잘함</li>
-            </ul>
-          </li>
-        </ul>
-        <div class="subtitle"><h2>보유 기술</h2></div>
-    
-        <ul>
-          <li>자바</li>
-          <li>오라클</li>
-        </ul>
-        <div class="subtitle">
-            <h2>학력</h2>
-        </div>
-        <table>
-          <tr>
-            <th>출신학교</th>
-            <th>전공</th>
-            <th>기간</th>
-            <th>구분</th>
-          </tr>
-          <tr>
-            <td>좋은대학교</td>
-            <td>좋은학과</td>
-            <td>2010.3 ~ 2013.2</td>
-            <td>졸업</td>
-          </tr>
-          <tr>
-            <td>괴로운고등학교</td>
-            <td>-</td>
-            <td>2007.3 ~ 2009.2</td>
-            <td>졸업</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+		<!-- Header -->
+			<header id="header" class="alt"><div class="logo"><a href="index.html">Urban <span>by TEMPLATED</span></a></div>
+				<a href="#" id="timer">Menu</a>
+			</header><!-- Nav --><nav id="menu"><ul class="links"><li><a href="index.html">Home</a></li>
+				<li><a href="generic.html">Generic</a></li>
+				<li><a href="elements.html">Elements</a></li>
+			</ul></nav><!-- Banner --><section id="banner"><div class="inner">
+					<header><h1>안녕하세요</h1>
+						<p>성장하는 개발자 김춘삼입니다.</p>
+					</header><a href="#main" class="button big scrolly">Learn More</a>
+				</div>
+			</section><!-- Main --><div id="main">
 
+				<!-- Section -->
+					<section class="wrapper style1"><div class="inner">
+							<!-- 2 Columns -->
+								<div class="flex flex-2">
+									<div class="col col1">
+										<div class="image round fit">
+											<a href="generic.html" class="link">
+												<img src="images/gumba.png" alt="" width="320" height="320" class="rotate-on-hover">
+											</a>
+										</div>
+									</div>
+									<div class="col col2">
+										<h3>열정으로 무장한 개발자 김춘삼</h3>
+										<p>저는 다양한 기술 스택과 폭넓은 프로젝트 경험을 바탕으로 프론트엔드와 백엔드를 넘나드는 풀스택 개발자로 성장해왔습니다. .</p>
+										<p>저의 열정과 전문성은 귀사의 성장과 발전에 큰 기여를 할 수 있음을 확신하며, 끊임없는 도전과 창의적 문제 해결력을 바탕으로 함께 미래를 창조해 나가고자 합니다. </p>
+										<a href="#" class="button">Learn More</a>
+									</div>
+								</div>
+						</div>
+					</section><!-- Section --><section class="wrapper style2"><div class="inner">
+							<div class="flex flex-2">
+								<div class="col col2">
+									<h3>보유 기술 스택</h3>
+									<p>대학 시절부터 코딩에 대한 열정을 품고, 개인 학습과 팀 프로젝트를 통해 HTML, CSS, JavaScript 등 기초 웹 기술을 탄탄히 다졌으며, 이후 Node.js, Django, Spring Boot 등 서버 개발 기술을 습득하여 안정적이고 확장 가능한 백엔드 시스템 구축에 주력했습니다..</p>
+									<p>React, Vue.js 등 최신 프레임워크를 활용해 직관적이고 반응성 높은 사용자 인터페이스를 구현하고, RESTful API 설계 및 데이터베이스 관리 경험을 바탕으로 요구에 부합하는 최적의 솔루션을 제공해왔습니다. </p>
+									<a href="#" class="button">Learn More</a>
+								</div>
+								<div class="col col1 first">
+									<div class="image round fit">
+										<a href="generic.html" class="link"><img src="images/bonobono.jpg" alt="" width="320" height="320"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section><!-- Section --><section class="wrapper style1"><div class="inner">
+							<header class="align-center"><h2>더 알아보기</h2>
+								<p>Cras sagittis turpis sit amet est tempus, sit amet consectetur purus tincidunt.</p>
+							</header><div class="flex flex-3">
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/notion.png" alt="" width="320" height="320"></div>
+									<p>김춘삼의 노션에 방문해보세요! </p>
+									<a href="#" class="button">노션 바로가기</a>
+								</div>
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/github.jfif" alt="" width="320" height="320"></div>
+									<p>김춘삼의 깃허브에 방문해보세요! </p>
+									<a href="#" class="button">깃허브 바로가기</a>
+								</div>
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/pic04.jpg" alt="" width="320" height="320"></div>
+									<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet. </p>
+									<a href="#" class="button">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</section></div>
+
+		<!-- Footer -->
+			<footer id="footer"><div class="copyright">
+					<ul class="icons"><li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
+					</ul></div>
+			</footer><div class="copyright">
+			Site made with: <a href="https://templated.co/">TEMPLATED.CO</a>
+		</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrolly.min.js"></script><script src="assets/js/jquery.scrollex.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script></body></html>
+		
+
+<script>
+	setInterval(()=> {let datetime = new Date();
+	let hours = datetime.getHours();
+	let minutes = datetime.getMinutes();
+	let seconds = datetime.getSeconds();
+	if(hours < 10){
+		hours = 0+hours.toString();
+	}
+	if(minutes < 10){
+		minutes = 0+minutes.toString();
+	}
+	if(seconds < 10){
+		seconds = 0+seconds.toString();
+	}
+    let time = hours + ":" + minutes + ":" + seconds
+
+    let obj = document.querySelector("#timer");
+    obj.innerHTML = time;}, 1000);
+</script>
