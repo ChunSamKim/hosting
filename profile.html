@@ -3,121 +3,416 @@
 	Urban by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
---><html><head><title>Urban by TEMPLATED</title><meta charset="utf-8"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/main.css"></head>
+-->
+<html>
+
+<head>
+	<title>Urban by TEMPLATED</title>
+	<meta charset="utf-8">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
 <style>
 	.rotate-on-hover {
-    transition: transform 1s ease-in-out;
-  }
+		transition: transform 1s ease-in-out;
+	}
+
+	.rotate-on-hover:hover {
+		transform: rotate(360deg);
+	}
+
+	.slider-container {
+		position: relative;
+		overflow: hidden;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	img.hover-img:hover {
+    content: url("images/golden_novo.jpg");
+  	}
+
+	.slider {
+		display: flex;
+		transition: transform 0.5s ease;
+	}
+
+	.slide {
+		min-width: 100%;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.arrow-btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background: rgba(0, 0, 0, 0.5);
+		border: none;
+		color: #fff;
+		font-size: 24px;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	.arrow-btn.right {
+		right: 10px;
+	}
+
+	.arrow-btn.left {
+		left: 10px;
+	}
+
+	#chartToggle {
+  		text-align: center;
+	}
+	#tabs {
+  margin-top: 10px;
+}
+.tab-btn {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+.tab-btn.active {
+  background-color: #509df0;
+  color: #fff;
   
-  .rotate-on-hover:hover {
-    transform: rotate(360deg);
-  }
-  </style>
+}
+</style>
+
 <body>
-
-		<!-- Header -->
-			<header id="header" class="alt"><div class="logo"><a href="index.html">Urban <span>by TEMPLATED</span></a></div>
-				<a href="#" id="timer">Menu</a>
-			</header><!-- Nav --><nav id="menu"><ul class="links"><li><a href="index.html">Home</a></li>
-				<li><a href="generic.html">Generic</a></li>
-				<li><a href="elements.html">Elements</a></li>
-			</ul></nav><!-- Banner --><section id="banner"><div class="inner">
-					<header><h1>안녕하세요</h1>
-						<p>성장하는 개발자 김춘삼입니다.</p>
-					</header><a href="#main" class="button big scrolly">Learn More</a>
-				</div>
-			</section><!-- Main --><div id="main">
-
-				<!-- Section -->
-					<section class="wrapper style1"><div class="inner">
-							<!-- 2 Columns -->
-								<div class="flex flex-2">
-									<div class="col col1">
-										<div class="image round fit">
-											<a href="generic.html" class="link">
-												<img src="images/gumba.png" alt="" width="320" height="320" class="rotate-on-hover">
-											</a>
-										</div>
-									</div>
-									<div class="col col2">
-										<h3>열정으로 무장한 개발자 김춘삼</h3>
-										<p>저는 다양한 기술 스택과 폭넓은 프로젝트 경험을 바탕으로 프론트엔드와 백엔드를 넘나드는 풀스택 개발자로 성장해왔습니다. .</p>
-										<p>저의 열정과 전문성은 귀사의 성장과 발전에 큰 기여를 할 수 있음을 확신하며, 끊임없는 도전과 창의적 문제 해결력을 바탕으로 함께 미래를 창조해 나가고자 합니다. </p>
-										<a href="#" class="button">Learn More</a>
-									</div>
-								</div>
-						</div>
-					</section><!-- Section --><section class="wrapper style2"><div class="inner">
-							<div class="flex flex-2">
-								<div class="col col2">
-									<h3>보유 기술 스택</h3>
-									<p>대학 시절부터 코딩에 대한 열정을 품고, 개인 학습과 팀 프로젝트를 통해 HTML, CSS, JavaScript 등 기초 웹 기술을 탄탄히 다졌으며, 이후 Node.js, Django, Spring Boot 등 서버 개발 기술을 습득하여 안정적이고 확장 가능한 백엔드 시스템 구축에 주력했습니다..</p>
-									<p>React, Vue.js 등 최신 프레임워크를 활용해 직관적이고 반응성 높은 사용자 인터페이스를 구현하고, RESTful API 설계 및 데이터베이스 관리 경험을 바탕으로 요구에 부합하는 최적의 솔루션을 제공해왔습니다. </p>
-									<a href="#" class="button">Learn More</a>
-								</div>
-								<div class="col col1 first">
-									<div class="image round fit">
-										<a href="generic.html" class="link"><img src="images/bonobono.jpg" alt="" width="320" height="320"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section><!-- Section --><section class="wrapper style1"><div class="inner">
-							<header class="align-center"><h2>더 알아보기</h2>
-								<p>Cras sagittis turpis sit amet est tempus, sit amet consectetur purus tincidunt.</p>
-							</header><div class="flex flex-3">
-								<div class="col align-center">
-									<div class="image round fit">
-										<img src="images/notion.png" alt="" width="320" height="320"></div>
-									<p>김춘삼의 노션에 방문해보세요! </p>
-									<a href="#" class="button">노션 바로가기</a>
-								</div>
-								<div class="col align-center">
-									<div class="image round fit">
-										<img src="images/github.jfif" alt="" width="320" height="320"></div>
-									<p>김춘삼의 깃허브에 방문해보세요! </p>
-									<a href="#" class="button">깃허브 바로가기</a>
-								</div>
-								<div class="col align-center">
-									<div class="image round fit">
-										<img src="images/pic04.jpg" alt="" width="320" height="320"></div>
-									<p>Sed congue elit malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet. </p>
-									<a href="#" class="button">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</section></div>
-
-		<!-- Footer -->
-			<footer id="footer"><div class="copyright">
-					<ul class="icons"><li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
-					</ul></div>
-			</footer><div class="copyright">
-			Site made with: <a href="https://templated.co/">TEMPLATED.CO</a>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<!-- Header -->
+	<header id="header" class="alt">
+		<div class="logo"><a href="index.html">Urban <span>by TEMPLATED</span></a></div>
+		<a href="#" id="timer">Menu</a>
+	</header><!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="generic.html">Generic</a></li>
+			<li><a href="elements.html">Elements</a></li>
+		</ul>
+	</nav><!-- Banner -->
+	<section id="banner">
+		<div class="inner">
+			<header>
+				<h1>안녕하세요</h1>
+				<p>성장하는 개발자 김춘삼입니다.</p>
+			</header><a href="#main" class="button big scrolly">Learn More</a>
 		</div>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrolly.min.js"></script><script src="assets/js/jquery.scrollex.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script></body></html>
-		
+	</section><!-- Main -->
+	<div id="main">
+
+		<!-- Section -->
+		<section class="wrapper style1">
+			<div class="inner">
+
+			  <div class="flex flex-2">
+				<div class="col col1">
+				  <div class="image round fit">
+					<a href="generic.html" class="link">
+					  <img class="hover-img" src="images/novo.png" alt="" width="320" height="320">
+					</a>
+				  </div>
+				</div>
+				<div class="col col2">
+				  <h3>열정으로 무장한 개발자 김춘삼</h3>
+				  <p>저는 다양한 기술 스택과 폭넓은 프로젝트 경험을 바탕으로 프론트엔드와 백엔드를 넘나드는 풀스택 개발자로 성장해왔습니다.</p>
+				  <p>저의 열정과 전문성은 귀사의 성장과 발전에 큰 기여를 할 수 있음을 확신하며, 끊임없는 도전과 창의적 문제 해결력을 바탕으로 함께 미래를 창조해 나가고자 합니다.</p>
+				  <!-- 접었다 펴는 토글 화살표 -->
+				  <div id="tableToggle" style="cursor: pointer; font-size: 2em; text-align: center; margin-top: 10px;">
+					&#x25BC;
+				  </div>
+				  <div id="tabs" style="display: none; text-align: center; margin-top: 10px;">
+					<button class="tab-btn active" data-target="works">프로젝트</button>
+					<button class="tab-btn" data-target="career">경력</button>
+				  </div>
+				  <!-- 표 -->
+				  <div id="tableContainer" style="display: none; margin-top: 20px;">
+					<!-- 개발작품 표 -->
+					<div id="worksTable" class="tab-content">
+					  <table border="1" width="100%">
+						<thead>
+						  <tr>
+							<th>작품명</th>
+							<th>설명</th>
+							<th>기간</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>Outfit Oracle</td>
+							<td>20대 여성들을 위한 이커머셜 연동 코디추천 앱</td>
+							<td>2023-2024</td>
+						  </tr>
+						  <tr>
+							<td>일정관리 앱</td>
+							<td>일정관리 및 일정공유 앱</td>
+							<td>2024</td>
+						  </tr>
+						</tbody>
+					  </table>
+					</div>
+					<!-- 경력 표 -->
+					<div id="careerTable" class="tab-content" style="display: none;">
+					  <table border="1" width="100%">
+						<thead>
+						  <tr>
+							<th>학력/경력</th>
+							<th>부서/직위</th>
+							<th>근무기간</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>한국공학대학교</td>
+							<td>컴퓨터공학과</td>
+							<td>2019-2024</td>
+						  </tr>
+						  <tr>
+							<td>비봉고등학교</td>
+							<td>학생</td>
+							<td>2017-2019</td>
+						  </tr>
+						</tbody>
+					  </table>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		<section class="wrapper style2">
+			<div class="inner">
+			  <div class="flex flex-2">
+
+				<div class="col col2">
+				  <h3>보유 기술 스택</h3>
+				  <p>
+					대학 시절부터 코딩에 대한 열정을 품고, HTML, CSS, JavaScript 등 기본 웹 기술과 함께
+					다양한 백엔드 및 프론트엔드 프레임워크를 습득해왔습니다.
+				  </p>
+				  <!-- 차트 화살표 -->
+				  <div id="chartToggle" style="cursor: pointer; font-size: 2em; margin-top: 10px;">
+					&#x25BC;
+				  </div>
+				  <!-- 차트 영역 -->
+				  <div id="chartContainer" style="display: none; margin-top: 20px;">
+					<canvas id="techChart"></canvas>
+				  </div>
+				</div>
+
+				<div class="col col1 first">
+				  <div class="image round fit">
+					<a href="generic.html" class="link">
+					  <img src="images/bonobono.jpg" alt="" width="320" class="rotate-on-hover" height="320">
+					</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+			<section class="wrapper style1">
+				<div class="inner">
+					<header class="align-center">
+						<h2>더 알아보기</h2>
+					</header>
+					<div class="slider-container">
+						<!-- 슬라이더 래퍼 -->
+						<div class="slider">
+							<!-- notion 슬라이드 -->
+							<div class="slide">
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/notion.webp" alt="노션 이미지" width="300" height="300">
+									</div>
+									<p>김춘삼의 노션에 방문해보세요!</p>
+									<a href="https://www.notion.so/c5079240302e4d74b4f5cc72c8919ff3" class="button">노션 바로가기</a>
+								</div>
+							</div>
+							<!-- github 슬라이드 -->
+							<div class="slide">
+								<div class="col align-center">
+									<div class="image round fit">
+										<img src="images/github.jfif" alt="깃허브 이미지" width="300" height="300">
+									</div>
+									<p>김춘삼의 깃허브에 방문해보세요!</p>
+									<a href="https://github.com/ChunSamKim" class="button">깃허브 바로가기</a>
+								</div>
+							</div>
+						</div>
+						<button class="arrow-btn right" id="toggleBtn">&gt;</button>
+					</div>
+				</div>
+			</section>
+
+
+
+	</div>
+
+	
+	
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
 
 <script>
-	setInterval(()=> {let datetime = new Date();
-	let hours = datetime.getHours();
-	let minutes = datetime.getMinutes();
-	let seconds = datetime.getSeconds();
-	if(hours < 10){
-		hours = 0+hours.toString();
-	}
-	if(minutes < 10){
-		minutes = 0+minutes.toString();
-	}
-	if(seconds < 10){
-		seconds = 0+seconds.toString();
-	}
-    let time = hours + ":" + minutes + ":" + seconds
+	setInterval(() => {
+		let datetime = new Date();
+		let hours = datetime.getHours();
+		let minutes = datetime.getMinutes();
+		let seconds = datetime.getSeconds();
+		if (hours < 10) {
+			hours = 0 + hours.toString();
+		}
+		if (minutes < 10) {
+			minutes = 0 + minutes.toString();
+		}
+		if (seconds < 10) {
+			seconds = 0 + seconds.toString();
+		}
+		let time = hours + ":" + minutes + ":" + seconds
 
-    let obj = document.querySelector("#timer");
-    obj.innerHTML = time;}, 1000);
+		let obj = document.querySelector("#timer");
+		obj.innerHTML = time;
+	}, 1000);
+
+
+
+	document.addEventListener("DOMContentLoaded", function () {
+		let currentSlide = 0;
+		const slider = document.querySelector('.slider');
+		const slides = document.querySelectorAll('.slide');
+		const toggleBtn = document.getElementById('toggleBtn');
+
+		toggleBtn.addEventListener('click', function () {
+			if (currentSlide === 0) {
+				// 슬라이드 이동 1-2
+				currentSlide = 1;
+				slider.style.transform = 'translateX(-100%)';
+				
+				toggleBtn.innerHTML = '&lt;';
+				toggleBtn.classList.remove('right');
+				toggleBtn.classList.add('left');
+			} else {
+				// 슬라이드 이동 2-1
+				currentSlide = 0;
+				slider.style.transform = 'translateX(0)';
+				
+				toggleBtn.innerHTML = '&gt;';
+				toggleBtn.classList.remove('left');
+				toggleBtn.classList.add('right');
+			}
+		});
+	});
+
+
+
+
+	$(document).ready(function(){
+    let techChartInitialized = false;
+    let techChart;
+
+    $("#chartToggle").click(function(){
+      $("#chartContainer").slideToggle("fast", function(){
+        if ($("#chartContainer").is(":visible")) {
+          // 화살표 설정
+          $("#chartToggle").html("&#x25B2;");
+          
+          if (!techChartInitialized) {
+            const ctx = document.getElementById('techChart').getContext('2d');
+            techChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ['Java', 'HTML', 'Oracle', 'Flutter', 'Node.js', 'Kotlin'],
+                datasets: [{
+                  label: '숙련도(%)',
+                  data: [90, 70, 75, 80, 85, 85], 
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(54, 162, 235, 0.6)',
+                    'rgba(255, 206, 86, 0.6)',
+                    'rgba(75, 192, 192, 0.6)',
+                    'rgba(153, 102, 255, 0.6)',
+                    'rgba(255, 159, 64, 0.6)'
+                  ],
+                  borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    max: 100
+                  }
+                }
+              }
+            });
+            techChartInitialized = true;
+          }
+        } else {
+          $("#chartToggle").html("&#x25BC;");
+        }
+      });
+    });
+  });
+
+
+  $(document).ready(function(){
+    $("#tableToggle").click(function(){
+      $("#tableContainer").slideToggle("fast", function(){
+        if($("#tableContainer").is(":visible")){
+          $("#tableToggle").html("&#x25B2;");
+          $("#tabs").fadeIn("fast");
+          // 기본 탭 설정
+          $(".tab-btn").removeClass("active");
+          $(".tab-btn[data-target='works']").addClass("active");
+          $(".tab-content").hide();
+          $("#worksTable").show();
+        } else {
+          // 접히면 화살표를 아래쪽(▼)로 변경하고 탭 네비게이션 숨김
+          $("#tableToggle").html("&#x25BC;");
+          $("#tabs").fadeOut("fast");
+        }
+      });
+    });
+    
+    // 표전환
+    $(".tab-btn").click(function(){
+      $(".tab-btn").removeClass("active");
+      $(this).addClass("active");
+      var target = $(this).data("target");
+      $(".tab-content").hide();
+      if(target === "works"){
+        $("#worksTable").fadeIn("fast");
+      } else if(target === "career"){
+        $("#careerTable").fadeIn("fast");
+      }
+    });
+  });
 </script>
